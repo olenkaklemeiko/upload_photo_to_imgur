@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".application.fragment.links.LinksFragment"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.testapplication.application.fragment.links.LinksFragmentViewModel" />
+
+        <variable
+            name="adapter"
+            type="com.test.testapplication.application.adapter.LinksAdapter" />
+    </data>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/links_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEFF1"
+        app:adapter="@{adapter}"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</layout>

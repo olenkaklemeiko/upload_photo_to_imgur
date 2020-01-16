@@ -1,0 +1,13 @@
+package com.test.testapplication.data.network.image
+
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+
+data class ResponseData(
+    @SerializedName("name")
+    @Expose
+    val name: String,
+    @SerializedName("link")
+    @Expose
+    val link: String
+)
